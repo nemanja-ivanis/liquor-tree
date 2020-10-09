@@ -20,7 +20,7 @@
       <i
         v-if="options.checkbox"
         class="tree-checkbox"
-        :class="{'checked': node.states.checked, 'indeterminate': node.states.indeterminate}"
+        :class="{'checked': node.states.checked, 'indeterminate': node.states.indeterminate, 'disabled-node': node.states.disabledCustom}"
         @click.stop="check"
       />
 
